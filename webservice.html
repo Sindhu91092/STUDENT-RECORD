@@ -1,0 +1,52 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script type="text/javascript" src="webservice.css"></script>
+    <script type="text/javascript">
+
+    	
+    	var myApp = angular.module('myApp',[]);
+
+        myApp.controller('myController', ['$scope','$http', function($scope, $http) {
+        $scope.greeting = 'Hola!';
+
+       $http({
+            method: 'GET',
+            url: 'http://162.17.231.114:121/SpinoService.svc/GetCategory'
+            }).then(function (response) {
+
+              console.log(response);
+              $scope.arraylist = response.data.GetCategoryResult;
+            }, function (response) {
+
+              console.log("Error inside code");
+    
+  }); 
+       
+        }]);
+
+    </script>
+ 	<title>Web Service</title>
+ </head>
+ <body>
+
+   <div ng-app="myApp" ng-controller="myController">
+     {{greeting}}
+
+     <div ng-repeat="x in arraylist">
+     	
+     	<ul>{{x.category_name}}</ul>
+     
+
+     </div>
+
+
+   </div>
+
+
+
+ </body>
+ </html>
+
+ 

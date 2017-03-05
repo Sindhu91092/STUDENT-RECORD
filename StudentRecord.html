@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Student Records 2017</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="container">
+
+<br>
+<br>
+ 
+ <table class="table table-bordered table-striped">
+	<thead>
+		<tr>
+			<th>SNo</th>
+			<th>Stu_Name</th>
+			<th>Roll_Nmbr</th>
+			<th>Semester</th>
+			<th>Marks(%)</th>
+		</tr>
+	</thead>
+
+ </table>
+	
+
+</div>
+<ul></ul>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+
+
+ <!-- <script type="text/javascript" src="StudentRecord.js"></script> -->
+
+<script>
+	
+	$.getJSON("StudentRecord.json",function(data){
+		
+		var items=[];
+		$.each(data.student, function(key,value){
+			//console.log(value.Stu_Name);
+			items.push("<tr>");
+			items.push("<td >"+value.SNo+"</td>");
+			items.push("<td >"+value.Stu_Name+"</td>");
+			items.push("<td >"+value.Roll_Nmbr+"</td>");
+			items.push("<td >"+value.Semester+"</td>");
+			items.push("<td >"+value.Marks+"</td>");
+			items.push("</tr>");
+		});
+
+		$("<tbody/>",{html: items.join("")}).appendTo("table");
+	});
+
+</script>
+
+
+</body>
+</html>

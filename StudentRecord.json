@@ -1,0 +1,90 @@
+{
+
+	"student": [
+
+
+   {
+      "SNo": 1,
+      "Stu_Name": "Sowmya",
+      "Roll_Nmbr": "S522600",
+      "Semester": "First",
+      "Marks": 80
+   }
+   ,
+   {
+   	  "SNo": 2,
+      "Stu_Name": "Sindhu",
+      "Roll_Nmbr": "S522601",
+      "Semester": "Second",
+      "Marks": 70
+   }
+   ,
+   {
+   	  "SNo": 3,
+      "Stu_Name": "Lakshmi",
+      "Roll_Nmbr": "S522602",
+      "Semester": "Second",
+      "Marks": 75
+   }
+   ,
+   {
+   	  "SNo": 4,
+      "Stu_Name": "Poorna",
+      "Roll_Nmbr": "S522603",
+      "Semester": "Third",
+      "Marks": 90
+   }
+   ,
+   {
+   	  "SNo": 5,
+      "Stu_Name": "Madhav",
+      "Roll_Nmbr": "S522604",
+      "Semester": "First",
+      "Marks": 80
+   }
+   ,
+   {
+   	  "SNo": 6,
+      "Stu_Name": "Radha",
+      "Roll_Nmbr": "S522605",
+      "Semester": "Fourth",
+      "Marks": 60
+   }
+   ,
+   {
+   	  "SNo": 7,
+      "Stu_Name": "Krishna",
+      "Roll_Nmbr": "S522606",
+      "Semester": "Fourth",
+      "Marks": 64
+   }
+   ,
+   {
+   	  "SNo": 8,
+      "Stu_Name": "Latha",
+      "Roll_Nmbr": "S522607",
+      "Semester": "Fourth",
+      "Marks": 77
+   }
+   ,
+   {
+   	  "SNo": 9,
+      "Stu_Name": "Lekha",
+      "Roll_Nmbr": "S522608",
+      "Semester": "Second",
+      "Marks": 94
+   }
+   ,
+   {
+   	  "SNo": 10,
+      "Stu_Name": "Murthy",
+      "Roll_Nmbr": "S522609",
+      "Semester": "Third",
+      "Marks": 96
+   }
+
+  
+]
+
+}
+
